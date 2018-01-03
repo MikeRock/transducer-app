@@ -1,0 +1,39 @@
+{
+  "name": "transducer-app",
+  "version": "1.0.0",
+  "description": "A transducer testing app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "webpack": "babel-node ./node_modules/webpack/bin/webpack",
+    "server": "babel-node ./server.js",
+    "prod": "nodemon ./server.js --exec babel-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.5",
+    "js-csp": "^1.0.1",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "ramda": "^0.25.0",
+    "rxjs": "^5.5.2",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "js-csp": "^1.0.1",
+    "morgan": "^1.9.0",
+    "transducers-js": "^0.4.174"
+  }
+}
